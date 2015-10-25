@@ -1,0 +1,36 @@
+package com.qqpractice.user;
+
+import android.graphics.Bitmap;
+
+
+public class UserList {
+	private String username;
+	private String nickname;
+	private String password;
+	private Bitmap headicon;
+	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getNickname() {
+		return nickname;
+	}
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public Bitmap getHeadicon() {
+		return headicon;
+	}
+	public void setHeadicon(Bitmap headicon) {
+		this.headicon = headicon;
+	}
+}

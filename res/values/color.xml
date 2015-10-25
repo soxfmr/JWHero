@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#ffffffff</color>
+    <color name="Light">#66ffffff</color>
+    
+    <color name="Input_Background">#00000000</color>
+    <color name="Input_TextColor">#ff5d5d5d</color>
+    <color name="Input_HintColor">#ffaaaaaa</color>
+    <color name="text_photoshop">#FFC5C5C5</color>
+    <color name="photoshop_border">#535353</color>
+    <color name="photoshop_content">#262626</color>
+    <color name="newidea_dark">#08608A</color>
+    <color name="newidea_light">#458CA6</color>
+    <color name="newidea_hl_dark">#43add9</color>
+    <color name="newidea_hl_light">#41aad9</color>
+    <color name="text_newidea">#F4FFFF</color>
+    
+    <color name="highlight_black">#ff555555</color>
+    <color name="highlight_white">#55ffffff</color>
+</resources>

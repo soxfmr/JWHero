@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.qqpractice.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_newidea"
+    tools:context=".HomeActivity" >
+    
+    <LinearLayout 
+        android:id="@+id/lyhome_mainview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+        <RelativeLayout 
+	        android:id="@+id/lyhome_login_tips"
+		    android:layout_width="match_parent"
+		    android:layout_height="45dp"
+		    android:background="@drawable/bg_newidea_highlight" >
+	        <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"
+			    android:textColor="@color/text_newidea"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+        <!-- Creating the Main View because of the limit of scroll view. -->
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+	        <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+			    
+	            <RelativeLayout
+		            android:id="@+id/lyhome_user"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+				    android:layout_marginLeft="12dp"
+				    android:layout_marginRight="12dp"
+				    android:layout_marginTop="12dp" >
+			        <LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+			            <TextView
+			                android:id="@+id/home_user_username"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="PaintorYu"
+			                android:textColor="@color/text_newidea"
+			                android:textSize="24sp" />
+			        </LinearLayout>
+	        	</RelativeLayout>
+		        
+		        <!-- Content View -->
+		        <com.qqpractice.ui.FuncViewPager
+				    android:id="@+id/home_function_pager"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+			    	android:layout_marginLeft="12dp"
+			    	android:layout_marginRight="12dp"
+			    	android:layout_marginTop="20dp" />
+		
+		        <RelativeLayout 
+		            android:id="@+id/home_toolsbar"
+				    android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:layout_marginTop="20dp" >
+	      	        <!-- Front Switch Button -->
+		   	        <LinearLayout
+		   	            android:id="@+id/home_switchbutton_front"
+					    android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:orientation="horizontal"
+				    	android:baselineAligned="true" >
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_practice"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_practice"
+		   	                app:eib_text="@string/home_switchbutton_practice" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_fight"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_fight"
+		   	                app:eib_text="@string/home_switchbutton_fight" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_quench"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_quench"
+		   	                app:eib_text="@string/home_switchbutton_quench" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_next"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_next"
+		   	                app:eib_text="@string/home_switchbutton_next" />
+		   	        </LinearLayout>
+		   	        <!-- Back Switch Button -->
+		   	        <LinearLayout
+		   	            android:id="@+id/home_switchbutton_back"
+					    android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:orientation="horizontal"
+				    	android:baselineAligned="true"
+				    	android:visibility="gone" > 
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_previous"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_back"
+		   	                app:eib_text="@string/home_switchbutton_previous" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_attribute"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_attr"
+		   	                app:eib_text="@string/home_switchbutton_attribute" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_baggage"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_bag"
+		   	                app:eib_text="@string/home_switchbutton_baggage" />
+		   	            <com.qqpractice.ui.ExImageButton
+		   	                android:id="@+id/home_switchbutton_online"
+		   	                android:layout_weight="1"
+		   	                android:layout_width="0dp"
+		   	                android:layout_height="wrap_content"
+		   	                app:eib_icon="@drawable/ic_transparent_online"
+		   	                app:eib_text="@string/home_switchbutton_online" />
+		   	        </LinearLayout>
+		   	    </RelativeLayout>
+		   	    
+		        <!-- Log content -->
+		        <RelativeLayout 
+		            android:id="@+id/lyhome_log_container"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+			    	android:layout_marginTop="20dp" >
+		            <com.qqpractice.ui.LogContainer
+		    	        android:id="@+id/home_logcontainer"
+		    	        android:orientation="vertical"
+					    android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_margin="12dp" >
+					</com.qqpractice.ui.LogContainer>
+		        </RelativeLayout>
+	    	</LinearLayout>
+    	</ScrollView>
+        
+    </LinearLayout>
+
+</RelativeLayout>

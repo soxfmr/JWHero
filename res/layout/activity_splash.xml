@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    tools:context=".SplashActivity" >
+
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center" >
+	    <ImageView
+	        android:id="@+id/iv_splash_dragon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/splash_dragon"
+	        android:contentDescription="@string/common_image_desc" />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:src="@drawable/splash_slogan"
+	        android:contentDescription="@string/common_image_desc" />
+	</LinearLayout>    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="12dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/common_copyright" />
+
+</RelativeLayout>

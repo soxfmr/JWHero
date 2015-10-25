@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExImageButton">
+        <attr name="eib_icon" format="reference"/>
+    	<attr name="eib_text" format="string"/>
+ 	</declare-styleable>
+ 	
+    <declare-styleable name="GridTable">
+        <attr name="gt_title" format="string"/>
+        <attr name="gt_level" format="string" />
+    	<attr name="gt_paytitle" format="string"/>
+    	<attr name="gt_pay" format="integer"/>
+    	<attr name="gt_checked" format="boolean"/>
+ 	</declare-styleable>
+ 	
+    <declare-styleable name="AttributeLine">
+        <attr name="al_name" format="string"/>
+ 	</declare-styleable>
+    
+ 	<item type="integer" name="DelayTimeMillis">250</item>
+</resources>

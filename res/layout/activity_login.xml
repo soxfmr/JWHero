@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+        <RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="12dp"
+		    android:paddingRight="12dp"
+		    android:layout_gravity="center" >
+            
+            <com.qqpractice.ui.LayoutButton 
+	           	android:id="@+id/Login_btnAccountmgr"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+            	android:layout_marginBottom="15dp"
+            	android:layout_centerHorizontal="true"
+            	android:gravity="center" >
+		        <FrameLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            <ImageView
+		              	android:id="@+id/Login_UserIcon"
+		                android:layout_width="60dp"
+		                android:layout_height="60dp"
+		                android:contentDescription="@string/common_image_desc"
+		                android:src="@drawable/icon" />
+		            <ImageView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:src="@drawable/more"
+		                android:layout_gravity="bottom|right"
+		                android:contentDescription="@string/common_image_desc" />
+		        </FrameLayout>
+		    </com.qqpractice.ui.LayoutButton>
+            
+	        <LinearLayout
+	            android:id="@+id/Login_lyUserName"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+	           	android:layout_height="wrap_content"
+	           	android:layout_below="@id/Login_btnAccountmgr"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:baselineAligned="false"
+				android:background="@drawable/input_bg" >
+		        <LinearLayout 
+                    android:orientation="horizontal"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+            		android:layout_weight="1" >
+                    <TextView
+                        android:id="@+id/Login_UserNameIcon"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="16.0sp"
+			            android:layout_marginLeft="12dip"
+						android:background="@drawable/login_user"/>
+                    <AutoCompleteTextView
+                        android:id="@+id/Login_UserName"
+			            android:layout_width="fill_parent"
+			            android:layout_height="47.0dip"
+                        android:background="@color/Input_Background"
+			            android:textSize="16.0sp"
+                        android:textColor="@color/Input_TextColor"
+                        android:textColorHint="@color/Input_HintColor"
+                        android:hint="@string/login_username"
+			            android:layout_marginLeft="12.0dip"
+			            android:singleLine="true"
+			            android:maxLength="64"
+			            android:inputType="number"
+			            android:imeOptions="actionNext"
+			            android:completionThreshold="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="12dip" >
+                    <ImageView
+                        android:id="@+id/Login_UserName_Clear"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:visibility="gone"
+			            android:src="@drawable/login_delete"
+			            android:contentDescription="@string/common_image_desc" />
+                </LinearLayout>
+				
+			</LinearLayout>
+			
+	        <LinearLayout
+	            android:id="@+id/Login_lyPassword"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+	           	android:layout_height="wrap_content"
+	           	android:layout_marginTop="15dp"
+	           	android:layout_below="@id/Login_lyUserName"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+	            android:baselineAligned="false"
+				android:background="@drawable/input_bg" >
+				<LinearLayout 
+                    android:orientation="horizontal"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+            		android:layout_weight="1" >
+                    <TextView
+                        android:id="@+id/Login_PasswordIcon"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="16.0sp"
+			            android:layout_marginLeft="12dip"
+						android:background="@drawable/login_key"/>
+                    <EditText
+                        android:id="@+id/Login_Password"
+			            android:layout_width="fill_parent"
+			            android:layout_height="47.0dip"
+                        android:background="@color/Input_Background"
+			            android:textSize="16.0sp"
+                        android:textColor="@color/Input_TextColor"
+                        android:textColorHint="@color/Input_HintColor"
+                        android:hint="@string/login_password"
+			            android:layout_marginLeft="12.0dip"
+			            android:singleLine="true"
+			            android:maxLength="64"
+			            android:inputType="textPassword"
+			            android:imeOptions="actionNext" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="12dip" >
+                    <ImageView
+                        android:id="@+id/Login_Password_Clear"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:visibility="gone"
+			            android:src="@drawable/login_delete"
+			            android:contentDescription="@string/common_image_desc" />
+                </LinearLayout>
+			</LinearLayout>
+			
+	        <Button
+	            android:id="@+id/Login_btnLogin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:textSize="18sp"
+	            android:textColor="@color/White"
+	            android:text="@string/login_btnlogin"
+	            android:background="@drawable/btn_default_blue"
+	            android:layout_below="@id/Login_lyPassword" />
+	    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

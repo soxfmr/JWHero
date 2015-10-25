@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/bg_listview_item" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical" >
+        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+        	android:gravity="center_vertical" >
+	        <CheckBox
+		        android:id="@+id/userlist_item_cb_select"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:checked="false"
+		        android:background="@drawable/btn_check_holo_light" />
+	        <ImageView 
+	            android:id="@+id/userlist_item_iv_headicon"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:src="@drawable/icon"
+	        	android:layout_marginLeft="8dp"
+		        android:contentDescription="@string/common_image_desc" />
+        </LinearLayout>
+        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="8dp" >
+            <TextView 
+                android:id="@+id/userlist_item_tv_nickname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/text_photoshop" />
+       	 	<TextView 
+                android:id="@+id/userlist_item_tv_username"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/text_photoshop" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

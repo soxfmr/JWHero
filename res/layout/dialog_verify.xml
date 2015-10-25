@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+ 	android:layout_marginLeft="12dp"
+ 	android:layout_marginRight="12dp"
+	android:background="@drawable/dialog_bg" >
+	<LinearLayout
+	    android:id="@+id/Verify_Title"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="8dp" >
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/dialog_icon"
+	        android:contentDescription="@string/common_image_desc" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="@color/Input_TextColor"
+	        android:text="@string/verify_title"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="5dp" />
+	</LinearLayout>
+	<View
+	    android:id="@+id/Verify_Line"
+	    android:layout_below="@id/Verify_Title"
+   	    android:background="@drawable/dialog_line"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="1.0px" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Verify_Line"
+        android:layout_margin="12dp" >
+        <LinearLayout
+           	android:orientation="vertical"
+       	 	android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:layout_marginBottom="12dp" >
+         	<ImageView
+           		android:id="@+id/Verify_ImageCode"
+	          	android:layout_width="wrap_content"
+	          	android:layout_height="60dp"
+         	 	android:layout_gravity="center_horizontal"
+	          	android:layout_marginBottom="10dp"
+	          	android:contentDescription="@string/common_image_desc" />
+	      	<EditText
+	          	android:id="@+id/Verify_SafeCode"
+	          	android:layout_width="fill_parent"
+	          	android:layout_height="45.0dp"
+	          	android:paddingLeft="10dp"
+	          	android:textSize="16sp"
+             	android:textColor="@color/Input_TextColor"
+             	android:textColorHint="@color/Input_HintColor"
+	          	android:singleLine="true"
+	         	android:maxLength="64"
+	     	 	android:inputType="none"
+	     	 	android:hint="@string/verify_hint"
+	          	android:background="@drawable/input_bg"
+	          	android:imeOptions="actionNext" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/Verify_btnConfirm"
+         	android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:layout_marginBottom="10dp"
+         	android:textSize="16sp"
+         	android:textColor="@color/White"
+         	android:text="@string/common_confirm"
+         	android:background="@drawable/btn_default_blue"
+         	android:layout_gravity="center" />
+   	</LinearLayout>
+</RelativeLayout>

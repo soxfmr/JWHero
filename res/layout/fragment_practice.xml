@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lypractice_userinfo_basic"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        <TextView
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/practice_userinfo_basic_title_rank" />
+        <TextView
+            android:id="@+id/practice_userinfo_basic_rank"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="5dp"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/common_zero" />
+        <TextView
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="10dp"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/practice_userinfo_basic_title_power" />
+        <TextView
+            android:id="@+id/practice_userinfo_basic_power"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="5dp"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/common_zero" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lypractice_userinfo_experience"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:orientation="horizontal" >
+        <TextView
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/practice_userinfo_experience_title" />
+        <TextView
+            android:id="@+id/practice_userinfo_experience_current"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/common_zero" />
+        <TextView
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/common_format_pipe" />
+        <TextView
+            android:id="@+id/practice_userinfo_experience_total"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:textColor="@color/White"
+	    	android:text="@string/common_zero" />
+    </LinearLayout>
+    
+    <com.qqpractice.ui.ExpProgressBar
+        android:id="@+id/practice_userinfo_experience_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+    	android:layout_height="5dp"
+    	android:layout_marginTop="10dp"
+    	android:max="1000"
+    	android:progress="468"
+    	android:progressDrawable="@drawable/progress_bg" />
+</LinearLayout>

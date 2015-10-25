@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">精武英雄</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="common_zero">0</string>
+    <string name="common_format_pipe">/</string>
+    <string name="common_image_desc">image</string>
+    <string name="common_notice">提示</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_copyright">©2013&#8211;2014 Jwuyx.com JwuTeam</string>
+    
+    <string name="common_error_input">无效输入</string>
+    <string name="common_error_unknow">网络异常或系统繁忙</string>
+    
+    <string name="login_error_safe_code">验证码错误</string>
+    <string name="login_error_account">QQ账号或密码错误</string>
+    <string name="login_username">账号</string>
+    <string name="login_password">密码</string>
+    <string name="login_btnlogin">登录</string>
+    <string name="login_loading">登录中&#8230;</string>
+    
+    <string name="verify_title">安全验证</string>
+    <string name="verify_hint">点击图片刷新</string>
+    
+    <string name="home_switchbutton_practice">修炼</string>    
+    <string name="home_switchbutton_fight">比武</string>    
+    <string name="home_switchbutton_quench">淬炼</string>    
+    <string name="home_switchbutton_next">更多</string>    
+    <string name="home_switchbutton_previous">返回</string>    
+    <string name="home_switchbutton_attribute">潜能</string>  
+    <string name="home_switchbutton_baggage">行囊</string>  
+    <string name="home_switchbutton_online">在线</string>
+    
+    <string name="practice_userinfo_basic_title_rank">等级</string>
+    <string name="practice_userinfo_basic_title_power">体力</string>
+    <string name="practice_userinfo_experience_title">经验</string>
+    
+    <string name="practice_log_get_userinfo_failed">获取用户信息失败，请刷新重试</string>
+    <string name="practice_log_power_smaller_than_fifteen">体力小于15，请补充体力后刷新重试</string>
+    <string name="practice_log_power_smaller_than_twenty">体力小于20，请补充体力后刷新重试</string>
+    <string name="practice_log_practice_auto_change_place">等级不足，自动转入练功房</string>
+    <string name="practice_log_practice_success">体力充足，开始修炼</string>
+    <string name="practice_log_practice_failed">修炼失败，请刷新重试</string>
+    <string name="practice_log_finish_success">已成正果，修炼完成</string>
+    <string name="practice_log_finish_wait">正在修炼，等待结束</string>
+    <string name="practice_log_finish_error">停止修炼失败，请刷新重试</string>
+    <string name="practice_log_cure_success">受到干扰，疗伤成功</string>
+    <string name="practice_log_cure_failed">疗伤失败，请刷新重试</string>
+    <string name="practice_log_update_success">经验满足，升级成功</string>
+    <string name="practice_log_update_failed">自动升级失败，请刷新重试</string>
+    
+    <string name="session_timeout">会话信息过期，请重新登录</string>
+    <string name="session_load_failed">数据加载出错，请重新登录</string>
+</resources>
